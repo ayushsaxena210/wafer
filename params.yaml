@@ -5,10 +5,12 @@ base:
 
 data_source:
   s3_source: data_given/winequality.csv
-
+  encoding: utf-8
+  sep: ','
 load_data:
   raw_dataset_csv: data/raw/winequality.csv
-
+  sep: ','
+  index: False
 split_data:
   train_path: data/processed/train_winequality.csv
   test_path: data/processed/test_winequality.csv
